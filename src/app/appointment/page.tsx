@@ -8,7 +8,7 @@ const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
-  transition: { duration: 0.65, ease: 'easeOut', delay },
+  transition: { duration: 0.65, ease: 'easeOut' as const, delay },
 });
 
 const timeSlots = ['9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM', '7:00 PM', '8:00 PM', '9:00 PM'];

@@ -7,7 +7,7 @@ const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
-  transition: { duration: 0.65, ease: 'easeOut', delay },
+  transition: { duration: 0.65, ease: 'easeOut' as const, delay },
 });
 
 // Verified working Unsplash image IDs
