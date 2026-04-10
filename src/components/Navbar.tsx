@@ -134,7 +134,7 @@ export default function Navbar() {
             exit={{ opacity: 0, x: '100%' }}
             transition={{ type: 'tween', duration: 0.3 }}
             style={{
-              position: 'fixed', inset: 0, zIndex: 999,
+              position: 'fixed', inset: 0, zIndex: 1010,
               background: '#0F172A', display: 'flex', flexDirection: 'column',
             }}
           >
